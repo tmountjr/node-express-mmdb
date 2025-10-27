@@ -9,9 +9,9 @@ const mmdbReader = new mmdb.Reader(db);
 
 const ipinfoMiddleware = (req: any, _: any, next: NextFunction) => {
   const ip = req.ip;
-  let ipinfo = {}
+  let ipinfo = {};
   if (ip) {
-    ipinfo = Object.assign({}, mmdbReader.get(ip))
+    ipinfo = Object.assign({}, mmdbReader.get(ip));
   }
   req.ipinfo = ipinfo;
   next();
@@ -24,7 +24,7 @@ app.use(ipinfoMiddleware);
 app.enable("trust proxy");
 
 app.get("/", (req: any, res: any) => {
-  res.json(req.ipinfo)
+  res.json(req.ipinfo);
 });
 
 app.listen(port, () => {
