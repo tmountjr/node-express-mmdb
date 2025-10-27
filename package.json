@@ -1,0 +1,31 @@
+{
+  "name": "node-express-mmdb",
+  "version": "1.0.0",
+  "description": "Official Node.js Express client library for IPinfo, using a local MMDB database",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "tsc": "tsc --pretty --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "IPinfo",
+    "Express",
+    "Node.js",
+    "mmdb"
+  ],
+  "author": "",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@types/express": "^5.0.4",
+    "@types/node": "^24.9.1",
+    "dotenv": "^17.2.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "mmdb-lib": "^3.0.1",
+    "node-ts": "^8.0.8"
+  }
+}
