@@ -1,6 +1,6 @@
-# IP Info Server
+# IPinfo MMDB Middleware Demo
 
-This project provides an Express.js server that retrieves IP information using the MaxMind GeoIP2 database.
+This project provides an Express.js server that retrieves IP information using an IPinfo mmdb file.
 
 ## Installation
 
@@ -13,6 +13,8 @@ This project provides an Express.js server that retrieves IP information using t
    ```sh
    npm install
    ```
+4. Download an IPinfo mmdb file. You can download the IPinfo Lite database here: https://ipinfo.io/lite.
+5. Update the `src/index.ts` file to set the path to the downloaded database.
 
 ## Running the Development Server
 
