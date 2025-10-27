@@ -1,7 +1,7 @@
 {
   "name": "node-express-mmdb",
   "version": "1.0.0",
-  "description": "Official Node.js Express client library for IPinfo, using a local MMDB database",
+  "description": "Demo app for using IPinfo mmdb with Express and Node.js",
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
