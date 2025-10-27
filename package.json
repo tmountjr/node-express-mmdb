@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
-    "tsc": "tsc --pretty --watch",
+    "dev": "npx tsx --watch src/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -25,7 +25,6 @@
   },
   "dependencies": {
     "express": "^5.1.0",
-    "mmdb-lib": "^3.0.1",
-    "node-ts": "^8.0.8"
+    "mmdb-lib": "^3.0.1"
   }
 }

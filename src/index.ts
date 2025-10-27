@@ -2,7 +2,7 @@ import fs from "fs";
 import * as mmdb from "mmdb-lib";
 import express, { NextFunction } from "express";
 
-const dbFilename = "/path/to/mmdb/file.mmdb";
+const dbFilename = "../databases/standard_location.mmdb";
 
 const db = fs.readFileSync(dbFilename);
 const mmdbReader = new mmdb.Reader(db);
